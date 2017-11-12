@@ -22,6 +22,6 @@
         "clipboardWrite"
     ],
     "background": {
-        "scripts": ["background.js"]
+        "scripts": ["src/background.js"]
     }
 }
