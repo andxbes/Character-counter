@@ -7,7 +7,7 @@
 browser.contextMenus.create({
     id: "w-counter",
 //  title: browser.i18n.getMessage("contextMenuItemSelectionLogger"),
-    title: "Подсчитать количесвто символов",
+    title: "Посчитать количество символов",
     contexts: ["selection"]
 });
 
