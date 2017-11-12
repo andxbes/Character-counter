@@ -1,0 +1,33 @@
+{
+
+    "manifest_version": 2,
+    "name": "CountWords",
+    "version": "1.0",
+
+    "description": "Считаем слова",
+    "icons": {
+        "48": "icons/ico.svg"
+    },
+    "applications": {
+        "gecko": {
+            "id": "andxbes@gmail.com",
+            "strict_min_version": "45.0"
+        }
+    },
+
+    "permissions": [
+        "notifications",
+        "activeTab",
+        "contextMenus",
+        "clipboardWrite"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["context.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
